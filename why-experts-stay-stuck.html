@@ -32,10 +32,15 @@
   .nav-cta{background:var(--black);color:var(--cream);padding:10px 22px;border-radius:100px;font-size:.82rem;font-weight:700;letter-spacing:.03em;text-decoration:none;transition:transform .2s ease;}
   .nav-cta:hover{transform:translateY(-2px);}
 
-  .article-header{padding:64px 0 40px;max-width:720px;margin:0 auto;text-align:left;}
-  .article-header .eyebrow{justify-content:flex-start;}
-  .article-header h1{font-size:clamp(2rem,4.6vw,2.9rem);margin-bottom:18px;}
-  .article-meta{font-size:.9rem;color:rgba(38,34,29,.55);}
+  .post-band{position:relative;background:var(--black);color:var(--cream);overflow:hidden;padding:76px 0 56px;}
+  .hero-grain{position:absolute;inset:0;opacity:.05;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .band-letter{position:absolute;right:-2%;top:50%;transform:translateY(-50%);font-family:var(--font-display);font-style:italic;font-weight:700;font-size:min(32vw,320px);line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(247,231,180,.16);pointer-events:none;user-select:none;}
+  .post-band-inner{position:relative;z-index:2;max-width:720px;margin:0 auto;padding:0 28px;}
+  .post-band .eyebrow{justify-content:flex-start;color:var(--gold-1);}
+  .post-band .eyebrow::before{background:var(--gold-1);}
+  .post-band h1{font-size:clamp(2rem,4.6vw,2.9rem);margin-bottom:18px;color:var(--cream);}
+  .article-meta{font-size:.9rem;color:rgba(248,242,231,.55);}
+  article{padding-top:56px;}
 
   article{max-width:720px;margin:0 auto;padding-bottom:64px;}
   article p{font-size:1.08rem;margin-bottom:22px;color:rgba(38,34,29,.85);}
@@ -57,7 +62,8 @@
   footer{padding:40px 0;text-align:center;font-size:.85rem;color:rgba(38,34,29,.5);}
 
   @media (max-width:720px){
-    .article-header{padding:44px 0 28px;}
+    .post-band{padding:52px 0 40px;}
+    .band-letter{font-size:38vw;}
     .more-posts-grid{grid-template-columns:1fr;}
   }
 </style>
@@ -71,13 +77,17 @@
   </div>
 </nav>
 
-<div class="wrap">
-  <header class="article-header">
+<header class="post-band">
+  <div class="hero-grain"></div>
+  <span class="band-letter">W</span>
+  <div class="post-band-inner">
     <p class="eyebrow">Identity &amp; Conditioning</p>
     <h1>Why Purpose-Driven Experts Stay Stuck (And It's Not What You Think)</h1>
     <p class="article-meta">Tiesha Green · The Greatness Revolution™</p>
-  </header>
+  </div>
+</header>
 
+<div class="wrap">
   <article>
     <p>You've done the work.</p>
     <p>Read the books. Taken the courses. Followed the frameworks exactly as instructed.</p>
