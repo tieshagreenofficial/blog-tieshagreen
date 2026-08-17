@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Why The Right Framework Never Sticks — Tiesha Green</title>
+<meta name="description" content="You've bought the course. Followed it exactly as instructed. And it didn't move the way it should have. It was never the framework.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F8F2E7; --cream-2:#F1E8D8; --black:#14120F; --black-2:#1D1A16; --ink:#26221D;
+    --gold-1:#F7E7B4; --gold-2:#D8A73D; --gold-3:#9C7423; --gold-4:#FBF3D9;
+    --aqua:#4FD9C7; --aqua-deep:#1F9E8F;
+    --font-display:"Fraunces",serif; --font-body:"Manrope",sans-serif; --maxw:920px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--font-body);color:var(--ink);background:var(--cream);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:var(--font-display);line-height:1.15;font-weight:600;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-3);display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold-3);}
+
+  .nav{position:sticky;top:0;z-index:50;background:rgba(248,242,231,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(20,18,15,.08);}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;}
+  .nav-logo{font-family:var(--font-display);font-weight:600;font-size:1.05rem;letter-spacing:.02em;}
+  .nav-logo span{color:var(--gold-3);}
+  .nav-cta{background:var(--black);color:var(--cream);padding:10px 22px;border-radius:100px;font-size:.82rem;font-weight:700;letter-spacing:.03em;text-decoration:none;transition:transform .2s ease;}
+  .nav-cta:hover{transform:translateY(-2px);}
+
+  .article-header{padding:64px 0 40px;max-width:720px;margin:0 auto;text-align:left;}
+  .article-header .eyebrow{justify-content:flex-start;}
+  .article-header h1{font-size:clamp(2rem,4.6vw,2.9rem);margin-bottom:18px;}
+  .article-meta{font-size:.9rem;color:rgba(38,34,29,.55);}
+
+  article{max-width:720px;margin:0 auto;padding-bottom:64px;}
+  article p{font-size:1.08rem;margin-bottom:22px;color:rgba(38,34,29,.85);}
+  article h2{font-size:1.5rem;margin:44px 0 18px;}
+  article h3{font-size:1.2rem;margin:36px 0 14px;}
+  article strong{color:var(--black);font-weight:800;}
+
+  .cta-block{max-width:720px;margin:0 auto 88px;background:var(--black-2);color:var(--cream);border-radius:16px;padding:40px;text-align:center;}
+  .cta-block p{color:rgba(248,242,231,.85);font-size:1.05rem;margin-bottom:20px;}
+  .btn-primary{display:inline-block;background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);font-weight:700;font-size:.92rem;letter-spacing:.02em;padding:16px 38px;border-radius:100px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease;}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(216,167,61,.35);}
+
+  .more-posts{max-width:820px;margin:0 auto;padding-bottom:88px;}
+  .more-posts h3{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(38,34,29,.5);margin-bottom:20px;}
+  .more-posts-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;}
+  .more-post{display:block;padding:20px;background:var(--cream-2);border-radius:12px;text-decoration:none;color:inherit;font-size:.92rem;font-weight:700;transition:transform .25s ease;}
+  .more-post:hover{transform:translateY(-4px);}
+
+  footer{padding:40px 0;text-align:center;font-size:.85rem;color:rgba(38,34,29,.5);}
+
+  @media (max-width:720px){
+    .article-header{padding:44px 0 28px;}
+    .more-posts-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="https://tieshagreen.com" class="nav-logo">Tiesha <span>Green</span></a>
+    <a href="https://authoritygap.tieshagreen.com" class="nav-cta">Take The Assessment</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="article-header">
+    <p class="eyebrow">The Strategy Trap</p>
+    <h1>Why The Right Framework Never Sticks</h1>
+    <p class="article-meta">Tiesha Green · The Greatness Revolution™</p>
+  </header>
+
+  <article>
+    <p>You've bought the course. Maybe five of them.</p>
+    <p>You followed the framework exactly as instructed. Step one, step two, step three. You did the work.</p>
+    <p>And it didn't move the way it should have.</p>
+    <p>So you kept going. Kept adding. Because buying feels like doing, and doing feels like progress, and stopping feels like giving up.</p>
+    <p>I want to save you some money and some time. <strong>It was never the framework.</strong></p>
+
+    <h2>Some people can just run with a strategy. You can't. Here's why that's not a flaw.</h2>
+    <p>Some people can pick up a strategy and just run with it. Not because they've done more work. Not because they're ahead of you.</p>
+    <p>Just because their identity and their work were never fused in the first place. For them, the tactic and the self are two separate things. Learn it, run it, done.</p>
+    <p>For you, they're not separate. The work IS you.</p>
+    <p>That's not a disadvantage. It's exactly where your power comes from. But it also means a strategy that never touched who you are was always going to slide right off.</p>
+    <p><strong>Business is personal. Identity always leaks into business.</strong> Yours more than most.</p>
+
+    <h2>Building on sand</h2>
+    <p>Until your identity is settled, strategy has no solid ground to land on. You end up building on sand. The same blueprint that builds a house on solid ground just sinks when the ground underneath it was never solid to begin with.</p>
+    <p>The strategy isn't broken. It's always been capable of working.</p>
+    <p>Just not yet. Not from here.</p>
+
+    <h2>The part you haven't said out loud</h2>
+    <p>You're starting to suspect it's not the strategy.</p>
+    <p>And that's terrifying, honestly, because if it's not the strategy, what is it? Admitting that means facing something that feels a lot harder than buying one more course.</p>
+    <p>Here's what's actually true: the thing in the way isn't a flaw. It's a version of you that hasn't been fully claimed yet. The capability is already there. It's just been waiting for you to own it before it could work for you.</p>
+    <p><strong>People don't need another strategy. They need to become the person who can execute one.</strong></p>
+
+    <h2>What breaks the loop</h2>
+    <p>Stop adding. Start owning.</p>
+    <p>You don't need one more framework. You need to run everything you already know through the filter of who you actually are. Your specific gift. Your specific story. Your specific way of creating results nobody else creates quite the way you do.</p>
+    <p>When that clicks, the strategies you've already paid for start producing the results they were always capable of producing.</p>
+    <p>Curious exactly where your own gap is? I built a free 10-question assessment to show you.</p>
+  </article>
+
+  <div class="cta-block">
+    <p>Find out exactly where your authority is stuck.</p>
+    <a href="https://authoritygap.tieshagreen.com" class="btn-primary">Take The Authority Gap Assessment →</a>
+  </div>
+
+  <div class="more-posts">
+    <h3>Keep Reading</h3>
+    <div class="more-posts-grid">
+      <a href="/why-experts-stay-stuck" class="more-post">Why Purpose-Driven Experts Stay Stuck</a>
+      <a href="/the-gap-between-who-you-are-and-who-the-world-sees" class="more-post">The Gap Between Who You Are In The Room And Who The World Sees</a>
+      <a href="/best-kept-secret-syndrome-explained" class="more-post">Best-Kept Secret Syndrome, Explained</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Tiesha Green · The Greatness Revolution™ · <a href="https://tieshagreen.com">tieshagreen.com</a></p>
+</footer>
+
+</body>
+</html>
